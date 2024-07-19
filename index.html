@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web</title>
+    <link rel="stylesheet" href="styles/style.css">    
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <div class="columna-izquierda">
+            <textarea id="entradaTexto" class="textarea-izquierda" rows="3" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="contenedor-botones">
+                <div class="icon-text">
+                    <img src="assets/advertencia.png" alt="Ícono" width="15" height="15">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="botones">
+                    <button class="encriptar" onclick="encriptarTexto();">Encriptar</button>
+                    <button class="desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+                    <button class="limpiar" onclick="limpiar();">Limpiar</button>
+                </div>
+            </div>
+        </div>
+        <div class="columna-derecha">
+            <textarea id="salidaTexto" rows="3" class="textarea-derecha"></textarea>
+            <img id="imagen" src="assets/imagen.png" alt="Imagen" class="imagen">
+            <h2 id="textoInformativo1">Ningún mensaje fue encontrado</h2>
+            <h5 id="textoInformativo2" class="sinNegrilla">Ingresa el texto que desees encriptar o desencriptar.</h5>
+            <div class="botones">
+                <button class="copiar" id="botonCopiar" onclick="copiar('salidaTexto')">Copiar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="script.js"></script>
